@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RiadPaws</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-T8+whR0OX+/1hT9Z2f4l1Vm9Qc3PZlF/z4hGn/XAUY3QyF/dJThHGegAcuRSHLIZ0T3r6OAsQDn8Cm7K06bLQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<!-- Owl Carousel CSS -->
+<link rel="stylesheet" href="path/to/owl.carousel.min.css">
+<link rel="stylesheet" href="path/to/owl.theme.default.min.css">
+
+<!-- Owl Carousel JS -->
+<script src="path/to/jquery.min.js"></script>
+<script src="path/to/owl.carousel.min.js"></script>
+
+</head>
+<body>
+    <div class="container"> 
+        <form method="POST" action="feedback.php"></form>
+        <header class="header">
+            <h1>RiadPaws</h1>
+            <ul class="navbar">
+                <li><a class="index-link" href="index.html">Home</a></li>
+                <li><a class="services-link" href="index3.html">services</a></li>
+                <li><a class="services-link" href="index3.html">Feed</a></li>
+                <li><a class="login-link" href="form.html">Login</a></li>
+            </ul>
+        </header>
+     
+        <main class="content">
+            <section>
+                <h2>Welcome to our website</h2>
+                <p>RiadPaws is a website that aims to help people in Morocco with their pets. The website's purpose includes providing information about pets, finding nearby vets, purchasing pet food, and sharing adorable pet pictures.</p>
+            </section>
+            <div class="oval-box">
+                <h2>Get to know your pet with us!</h2>
+                <div class="space"></div>
+                <div class="owl-carousel">
+                    <div class="item" data-category="cat"> <a href="https://www.example.com"><img src="cat1.jpg" alt="Cat 1"></a></div>
+                  <div  class="item" data-category="dog"> <a href="https://www.akc.org/dog-breeds/pomeranian/"><img src="dogs.jpg" alt="dog 1"></a></div>
+                  <div  class="item" data-category="cat"> <a href="https://www.thesprucepets.com/british-shorthair-5219450"><img src="cat3.jpg" alt="cat 2"></a></div>
+                  <div  class="item" data-category="cat"> <a href="https://www.purina.co.uk/find-a-pet/cat-breeds/siamese"><img src="cat2.jpg" alt="cat 3"></a></div>
+                    
+
+                 </div>
+            
+                <div id="breed-info"></div>
+            </div>
+        </main>
+
+        <!-- New Blog Section -->
+        <section class="blog-section">
+            <h2>Latest Blog & News</h2>
+            <div class="blog-cards">
+                <div class="blog-card">
+                    <img src="work.jpg" alt="Blog Image">
+                    <h3> The Benefits of a Pet-Friendly Workplace</h3>
+                    <p>  As leaders consider what their organization should look like in our hybrid world, one area they may not be considering is the benefit that pets can have in the office. But a new research study indicates...</p>
+                    <a href="https://hbr.org/2023/11/research-the-benefits-of-a-pet-friendly-workplace">Read more</a>
+                </div>
+                <div class="blog-card">
+                    <img src="blog2.jpg" alt="Blog Image">
+                    <h3>Stories :A story no pet lover can ignore.</h3>
+                    
+                    <p>Animals are smart.
+
+                        In my teenage years I had a dog, who could say his own name – Ruff. After a shot from my air rifle, he would spring forward but halt if he heard me re-cock the rifle.Our civilisation has ..</p>
+                    <a href="https://cosmosmagazine.com/people/a-story-no-pet-lover-can-ignore/">Read more</a>
+                </div>
+                <div class="blog-card">
+                    <img src="dog.jpg" alt="Blog Image">
+                    <h3>The Perfect Companions For Every Lifestyle</h3>
+                    <p>Choosing the right pet for your home involves considering various factors such as space, time commitment, and personal preferences. If you’re ready to welcome a new furry (or scaly) friend ...</p>
+                    <a href="https://uniquetimes.org/discovering-the-perfect-pet-companions-for-every-lifestyle/">Read more</a>
+                </div>
+               
+            
+            </div>
+        </section>
+
+        <footer style="background-color: #3a3a3a; color: #ffffff; padding: 20px;">
+            <div class='fb-form'>
+                <form action='#' class='form-group'>
+                  <h2>Tell us what you think</h2>
+                  <input class='form-control' placeholder='Name' type='text'>
+                  <input class='form-control' placeholder='Email' type='text'>
+                  <textarea class='form-control' id='fb-comment' name='' placeholder='Tell us what you think'></textarea>
+                  <div class='rating'>
+                    <i class='fa fa-star'></i>
+                    <i class='fa fa-star'></i>
+                    <i class='fa fa-star'></i>
+                    <i class='fa fa-star'></i>
+                    <i class='fa fa-star'></i>
+                  </div>
+                  
+                  <button type="submit" class="btn">send</button>
+                </form>
+              </div>
+            <p>© 2023 RiadPaws</p>
+
+        </footer>
+       
+    </div>
+    <script>
+        function feedbackForm() {
+            $.ajax({
+                type: "POST",
+                url: "feedback.php",
+                data: $("#myForm").serialize(),
+                success: function(response) {
+                    console.log(response);
+                }
+            });
+        }
+    </script>
+</body>
+</html>

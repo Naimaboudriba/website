@@ -1,0 +1,52 @@
+{
+  "cat_breeds": [
+    {
+      "name": "Abyssinian",
+      "origin": "Unspecified, but somewhere in Afro-Asia, likely Ethiopia",
+      "type": "Natural",
+      "body_type": "Semi-foreign",
+      "coat_length": "Short",
+      "coat_pattern": "Ticked tabby"
+    },
+    {
+      "name": "Aegean",
+      "origin": "Greece",
+      "type": "Natural",
+      "body_type": "Moderate",
+      "coat_length": "Semi-long",
+      "coat_pattern": "Multi-color"
+    },
+    {
+      "name": "American Bobtail",
+      "origin": "United States",
+      "type": "Mutation of shortened tail",
+      "body_type": "Cobby",
+      "coat_length": "Semi-long",
+      "coat_pattern": "All"
+    },
+    {
+      "name": "American Curl",
+      "origin": "United States",
+      "type": "Mutation",
+      "body_type": "Semi-foreign",
+      "coat_length": "Semi-long",
+      "coat_pattern": "All"
+    },
+    {
+      "name": "American Ringtail",
+      "origin": "United States",
+      "type": "Mutation",
+      "body_type": "Foreign",
+      "coat_length": "Semi-long",
+      "coat_pattern": "All"
+    },
+    {
+      "name": "American Shorthair",
+      "origin": "United States",
+      "type": "Natural",
+      "body_type": "Semi-foreign",
+      "coat_length": "Short",
+      "coat_pattern": "All"
+    }
+  ]
+}

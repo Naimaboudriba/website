@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RiadPaws Feed</title>
+    <link rel="stylesheet" type="text/css" href="feed.css">
+   
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-T8+whR0OX+/1hT9Z2f4l1Vm9Qc3PZlF/z4hGn/XAUY3QyF/dJThHGegAcuRSHLIZ0T3r6OAsQDn8Cm7K06bLQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .navbar {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+
+        .navbar li {
+            margin: 0;
+        }
+
+        .navbar a {
+            display: block;
+            padding: 1em;
+            text-decoration: none;
+            color: #fff;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #555;
+        }
+
+        .main-header {
+            background-color: #f2f2f2;
+            padding: 1em;
+            text-align: center;
+        }
+
+        .post {
+            background-color: #fff;
+            margin: 20px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .user-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .user-info img {
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .post-buttons button {
+            background-color: #af4c96;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .post-buttons button:hover {
+            background-color: #a04589;
+        }
+
+        .post-buttons button i {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>RiadPaws</h1>
+            <ul class="navbar">
+                <li><a class="home-link" href="index.html">Home</a></li>
+                <li><a href="#">Feed</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a class="login-link" href="login.html">Login</a></li>
+            </ul>
+        </header>
+
+        <header class="main-header">
+            <h1>My Feed</h1>
+        </header>
+        <main>
+            <div class="post" data-post-id="1">
+                 <div>
+                        <img src="user1.jpg" alt="User Avatar" width="40" height="40">
+                        <span>Aya makik</span>
+                    </div>
+            
+                <p>my baby cat is 8 months todayy!! we need to party ! #cats #siamesecats</p>
+                <img src="siamese.jpg" alt="Post1"  width=100% height=300px object-fit=cover >
+                <div class="user-info">
+                    <div>
+                      
+                    </div>
+                    <span>Posted on: January 1, 2023</span>
+                </div>
+                <div class="post-buttons">
+                    <button onclick="likePost(1)"><i class="fas fa-heart"></i> Like</button>
+                    <button onclick="commentPost(1)"><i class="fas fa-comment"></i> Comment</button>
+                </div>
+            </div>
+
+            <div class="post" data-post-id="2">
+                <h2>Post Title 2</h2>
+                <p>Another post with some content. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="user-info">
+                    <div>
+                        <img src="user2.jpg" alt="User Avatar" width="40" height="40">
+                        <span>User 2</span>
+                    </div>
+                    <span>Posted on: January 2, 2023</span>
+                </div>
+                <div class="post-buttons">
+                    <button onclick="likePost(2)"><i class="fas fa-heart"></i> Like</button>
+                    <button onclick="commentPost(2)"><i class="fas fa-comment"></i> Comment</button>
+                </div>
+            </div>
+
+            <script>
+                function likePost(postId) {
+                  
+                }
+
+                function commentPost(postId) {
+                   
+                }
+            </script>
+        </main>
+    </div>
+</body>
+</html>
